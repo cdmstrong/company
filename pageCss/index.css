@@ -1,0 +1,70 @@
+
+.navbar-nav {
+    font-weight: 700;
+    font-size: 16px;
+}
+.navbar-nav li:hover {
+    color: #2153D1
+}
+.logo {
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: #2153D1;
+}
+.services {
+    padding: 25px 0 100px;
+}
+.services h2 {
+    margin-bottom: 20px;
+}
+.services-grid1 {
+    /* text-align: center; */
+}
+.services-grid1 h2 {
+    /* text-align: center; */
+}
+.projects h1, .services h2, .awards h3 {
+    text-align: center;
+    margin-left: 0;
+}
+.services-grid1 p {
+    color: #2153d1;
+    text-align: center;
+}
+.server h4 {
+    text-align: center;
+    color: #4d5566;
+
+}
+.services-desc {
+    color: #2153d1;
+    font-size: 14px;
+}
+/* 行业动态图 */
+.services-grid2 img {
+    top: 0px;
+    position: none !important;
+}
+.service-info-grids {
+    margin-top: 0px;
+}
+.service-info img {
+    width: 30px;
+}
+.service-info .h4-underline {
+    margin-left: 0px;
+    margin-top: 8px;
+}
+.indes-info {
+    display: flex;
+    align-items: center;
+}
+.indes-info span{
+    font-size: 20px;
+    font-weight: 700;
+}
+.h4-underline {
+    margin-top: 8px;
+}

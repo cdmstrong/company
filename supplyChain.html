@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <title>碳供应链</title>
+
+    <!-- Meta-Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript">
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+    <!-- //Meta-Tags -->
+
+    <!-- Custom-Stylesheet-Links -->
+    <!-- Bootstrap-CSS -->
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.min.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- Index-Page-CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <!-- Animate.CSS -->
+    <link rel="stylesheet" href="css/animate.css" type="text/css" media="all" />
+    <!-- //Custom-Stylesheet-Links -->
+
+    <!-- Fonts -->
+    <!-- Body-Font -->
+    <link
+      rel="stylesheet"
+      href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800"
+      type="text/css"
+    />
+    <!-- Logo-Font -->
+    <link
+      rel="stylesheet"
+      href="http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,900,700"
+      type="text/css"
+    />
+    <!-- Navbar-Font -->
+    <link
+      rel="stylesheet"
+      href="http://fonts.googleapis.com/css?family=Montserrat:400,700"
+      type="text/css"
+    />
+    <!-- //Fonts -->
+  </head>
+  <!-- //Head -->
+
+  <!-- Body -->
+  <body>
+    <!-- Header -->
+    <div class="header agileits w3layouts" id="home">
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-default agileits w3layouts inner-pages-navbar wow bounceInUp"
+      >
+        <div class="container">
+          <div class="navbar-header agileits w3layouts">
+            <button
+              type="button"
+              class="navbar-toggle agileits w3layouts collapsed"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-expanded="false"
+            >
+              <span class="sr-only agileits w3layouts">中和中碳</span>
+              <span class="icon-bar agileits w3layouts"></span>
+              <span class="icon-bar agileits w3layouts"></span>
+              <span class="icon-bar agileits w3layouts"></span>
+            </button>
+            <a
+              style="
+                color: black;
+                font-size: 20px;
+                font-weight: 400;
+                font-family: 'Cinzel Decorative', cursive;
+              "
+              href="index.html"
+              ><img
+                src="/images/icon/logo_zhzt.png"
+                style="width: 15%; height: 15%"
+              />中和中碳</a
+            >
+          </div>
+
+          <div
+            id="navbar"
+            class="navbar-collapse agileits w3layouts navbar-right collapse"
+          >
+            <ul class="nav navbar-nav agileits w3layouts">
+              <li><a href="index.html">首页</a></li>
+              <li class="active"><a href="supplyChain.html">碳供应链</a></li>
+              <li><a href="planning.html">碳中和规划</a></li>
+              <li><a href="solution.html">碳综合解决方案</a></li>
+              <li><a href="industryDynamics.html">行业动态</a></li>
+              <li><a href="firmInfo.html">公司简介</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- //Navbar -->
+
+      <!-- Banner -->
+      <div class="banner agileits w3layouts">
+        <img src="images/logo/hezuo.jpg" alt="Agileits W3layouts" />
+        <h1 class="wow agileits w3layouts fadeInDown">碳供应链</h1>
+      </div>
+      <!-- //Banner -->
+    </div>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script>
+      $.ajax({
+        type: "get",
+        url: "http://47.96.176.68:8088/dev-api/system/supplyChain/list?pageNum=1&pageSize=100 ",
+        ContentType: "",
+        success: function (data, status) {
+          var info = "";
+          var detail = "";
+          console.log(data);
+          if (data.rows != null && data.rows.length > 0) {
+            for (var i = 0; i < data.rows.length; i++) {
+              info +=
+                "<div class='col-md-4 col-sm-4 team-grid agileits w3layouts team-grid1 wow slideInUp' style='width:20%' id='tgylqy'>" +
+                "<h6 style='color:white ;'>" +
+                data.rows[i].firmName +
+                "</h6>" +
+                "<figure class='effect-zoe agileits w3layouts'>" +
+                "<img src='" +
+                "http://47.96.176.68:8088/dev-api" +
+                data.rows[i].imageUrl +
+                "' alt='Agileits W3layouts'/>" +
+                "<figcaption>" +
+                "<h5>" +
+                data.rows[i].firmName +
+                "</h5>" +
+                "<p class='description agileits w3layouts'>" +
+                "" +
+                "</p>" +
+                " </figcaption>" +
+                "</figure>" +
+                "</div>";
+            }
+          }
+          console.log(detail);
+          console.log(document.getElementById("tgylqy"));
+          document.getElementById("tgylqy").innerHTML = info;
+        },
+        error: function (data, status, e) {
+          alert("接口调用错误！");
+        },
+      });
+      $.ajax({
+        type: "get",
+        url: "http://47.96.176.68:8088/dev-api/system/firmInfo/list?pageNum=1&pageSize=10",
+        ContentType: "",
+        success: function (data, status) {
+          var info = "";
+          var detail = "";
+          console.log(data);
+          if (data.rows != null && data.rows.length > 0) {
+            document.getElementById("gsmc").innerHTML = data.rows[0].firmName;
+            document.getElementById("gsdz").innerHTML =
+              data.rows[0].registeredAddress;
+            document.getElementById("gsdh").innerHTML = data.rows[0].phone;
+          }
+        },
+        error: function (data, status, e) {
+          alert("接口调用错误！");
+        },
+      });
+    </script>
+    <!-- Team -->
+    <div
+      class="team agileits w3layouts"
+      style="padding: 40px 0; background-color: rgb(42, 41, 41)"
+    >
+      <div class="container">
+        <h3 style="color: rgb(255, 255, 255)">碳供应链企业</h3>
+        <div class="team-grids agileits w3layouts grid" id="tgylqy">
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <!-- //Team -->
+
+    <!-- Footer -->
+    <div class="footer agileits w3layouts">
+      <div class="container">
+        <div class="col-md-6 col-sm-6 agileits w3layouts footer-grids">
+          <div
+            class="col-md-4 col-sm-4 footer-grid agileits w3layouts footer-grid-1 wow fadeInUp"
+          >
+            <ul class="agileits w3layouts">
+              <li class="agileits w3layouts"><a href="index.html">首页</a></li>
+              <li class="agileits w3layouts">
+                <a href="supplyChain.html">碳供应链</a>
+              </li>
+              <li class="agileits w3layouts">
+                <a href="planning.html">碳中和规划</a>
+              </li>
+              <li class="agileits w3layouts">
+                <a href="solution.html">碳中和解决方案</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-md-4 col-sm-4 footer-grid agileits w3layouts footer-grid-2 wow fadeInUp"
+          >
+            <ul class="agileits w3layouts">
+              <li class="agileits w3layouts">
+                <a href="industryDynamics.html">行业动态</a>
+              </li>
+              <li class="agileits w3layouts">
+                <a href="firmInfo.html">公司简介</a>
+              </li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+        <div
+          class="col-md-6 col-sm-6 footer-grids agileits w3layouts newsletter wow fadeInUp"
+        >
+          <h4 id="gsmc"></h4>
+          <p>地址：<span id="gsdz"></span></p>
+          <p>电话：<span id="gsdh"></span></p>
+        </div>
+
+        <div
+          class="col-md-6 col-sm-6 footer-grids agileits w3layouts social wow fadeInUp"
+        >
+          <ul class="social-icons">
+            <li class="agileits w3layouts">
+              <a
+                href="#"
+                class="facebook agileits w3layouts"
+                title="Go to Our Facebook Page"
+              ></a>
+            </li>
+            <li class="agileits w3layouts">
+              <a
+                href="#"
+                class="twitter agileits w3layouts"
+                title="Go to Our Twitter Account"
+              ></a>
+            </li>
+            <li class="agileits w3layouts">
+              <a
+                href="#"
+                class="googleplus agileits w3layouts"
+                title="Go to Our Google Plus Account"
+              ></a>
+            </li>
+            <li class="agileits w3layouts">
+              <a
+                href="#"
+                class="instagram agileits w3layouts"
+                title="Go to Our Instagram Account"
+              ></a>
+            </li>
+            <li class="agileits w3layouts">
+              <a
+                href="#"
+                class="youtube agileits w3layouts"
+                title="Go to Our Youtube Channel"
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="col-md-6 col-sm-6 footer-grids agileits w3layouts copyright wow fadeInUp"
+        >
+          <p>Copyright &copy; 2017. 版权所有：中和中碳（厦门）科技有限公司.</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <!-- //Footer -->
+
+    <!-- Custom-JavaScript-File-Links -->
+
+    <!-- Default-JavaScript -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <!-- Bootstrap-JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Animate.CSS-JavaScript -->
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!-- //Animate.CSS-JavaScript -->
+
+    <!-- Slide-To-Top JavaScript (No-Need-To-Change) -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var defaults = {
+          containerID: "toTop", // fading element id
+          containerHoverID: "toTopHover", // fading element hover id
+          scrollSpeed: 100,
+          easingType: "linear",
+        };
+        $().UItoTop({ easingType: "easeOutQuart" });
+      });
+    </script>
+    <a href="#" id="toTop" class="agileits w3layouts" style="display: block">
+      <span id="toTopHover" style="opacity: 0"> </span
+    ></a>
+    <!-- //Slide-To-Top JavaScript -->
+
+    <!-- Smooth-Scrolling-JavaScript -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        $(".scroll, .navbar li a, .footer li a").click(function (event) {
+          $("html,body").animate(
+            { scrollTop: $(this.hash).offset().top },
+            1000
+          );
+        });
+      });
+    </script>
+    <!-- //Smooth-Scrolling-JavaScript -->
+
+    <!-- //Custom-JavaScript-File-Links -->
+  </body>
+  <!-- //Body -->
+</html>
+<style>
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #2153d1;
+  }
+</style>

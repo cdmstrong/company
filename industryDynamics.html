@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <title>行业动态</title>
+
+    <!-- Meta-Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript">
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+    <!-- //Meta-Tags -->
+
+    <!-- Custom-Stylesheet-Links -->
+    <!-- Bootstrap-CSS -->
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.min.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- Index-Page-CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <!-- Gallery-Popup-CSS -->
+    <link
+      rel="stylesheet"
+      href="css/chocolat.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- Animate.CSS -->
+    <link rel="stylesheet" href="css/animate.css" type="text/css" media="all" />
+    <!-- //Custom-Stylesheet-Links -->
+
+    <!-- Fonts -->
+    <!-- Body-Font -->
+    <link
+      rel="stylesheet"
+      href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800"
+      type="text/css"
+    />
+    <!-- Logo-Font -->
+    <link
+      rel="stylesheet"
+      href="http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,900,700"
+      type="text/css"
+    />
+    <!-- Navbar-Font -->
+    <link
+      rel="stylesheet"
+      href="http://fonts.googleapis.com/css?family=Montserrat:400,700"
+      type="text/css"
+    />
+    <!-- //Fonts -->
+  </head>
+  <!-- //Head -->
+
+  <!-- Body -->
+  <body>
+    <!-- Header -->
+    <div class="header agileits w3layouts" id="home">
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-default agileits w3layouts inner-pages-navbar wow bounceInUp"
+      >
+        <div class="container">
+          <div class="navbar-header agileits w3layouts">
+            <button
+              type="button"
+              class="navbar-toggle agileits w3layouts collapsed"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-expanded="false"
+            >
+              <span class="sr-only agileits w3layouts">中和中碳</span>
+              <span class="icon-bar agileits w3layouts"></span>
+              <span class="icon-bar agileits w3layouts"></span>
+              <span class="icon-bar agileits w3layouts"></span>
+            </button>
+            <a
+            style="color: black;font-size: 20px;font-weight: 400;font-family:'Cinzel Decorative', cursive;"
+            href="index.html"
+            ><img src="/images/icon/logo_zhzt.png" style="width: 15%;height:15% ;"/>中和中碳</a
+          > 
+          </div>
+
+          <div
+            id="navbar"
+            class="navbar-collapse agileits w3layouts navbar-right collapse"
+          >
+            <ul class="nav navbar-nav agileits w3layouts">
+              <li><a href="index.html">首页</a></li>
+              <li><a href="supplyChain.html">碳供应链</a></li>
+              <li><a href="planning.html">碳中和规划</a></li>
+              <li><a href="solution.html">碳综合解决方案</a></li>
+              <li class="active">
+                <a href="industryDynamics.html">行业动态</a>
+              </li>
+              <li><a href="firmInfo.html">公司简介</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- //Navbar -->
+
+      <!-- Banner -->
+      <div class="banner agileits w3layouts">
+        <img src="images/home/home2.jpg" alt="Agileits W3layouts" />
+        <h1 class="wow agileits w3layouts fadeInDown">行业动态</h1>
+      </div>
+      <!-- //Banner -->
+    </div>
+    <!-- //Header -->
+
+    <!-- Cuisines -->
+    <!-- <div class="cuisines agileits w3layouts">
+      <div class="container">
+        <div
+          class="col-md-6 col-sm-6 cuisines-grids agileits w3layouts cuisines-grids-1 wow slideInLeft"
+        >
+          <h2>行业动态</h2>
+          <p>
+            企业、团体或个人测算在一定时间内，直接或间接产生的温室气体排放总量，通过植树造林、节能减排等形式，抵消自身产生的二氧化碳排放，实现二氧化碳的“零排放”。
+          </p>
+        </div>
+
+        <div
+          class="col-md-6 col-sm-6 cuisines-grids agileits w3layouts cuisines-grids-2 wow slideInRight"
+        >
+          <img src="images/cuisines.jpg" alt="Agileits W3layouts" />
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div> -->
+
+    <!-- Details -->
+    <div class="details agileits w3layouts" id="zxdfdt" style="padding: 40px 0">
+      <div class="container">
+        <h3>
+          <a
+            onclick="changeTag()"
+            style="border-bottom: 3px solid; font-style: italic"
+            >行业信息</a
+          >&nbsp;&nbsp;&nbsp;<a
+            onclick="changeTag2()"
+            style="
+              color: rgb(106, 148, 183);
+              border-bottom: 3px solid;
+              font-style: italic;
+            "
+            >政策信息</a
+          >
+        </h3>
+        <div class="details-grids agileits w3layouts" id="zxdfdtlb">
+          <div
+            class="col-md-4 col-sm-4 details-grid agileits w3layouts details-grid-1 wow slideInUp"
+          >
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="tooltip-content agileits w3layouts" id="zxdfdtxq"></div>
+      </div>
+    </div>
+    <!-- //Details -->
+
+    <!-- Details -->
+    <div
+      class="details agileits w3layouts"
+      id="yqzhghdt"
+      style="padding: 40px 0"
+    >
+      <div class="container">
+        <h3>
+          <a
+            onclick="changeTag()"
+            style="border-bottom: 3px solid; font-style: italic"
+            >行业信息</a
+          >&nbsp;&nbsp;&nbsp;<a
+            onclick="changeTag2()"
+            style="
+              color: rgb(106, 148, 183);
+              border-bottom: 3px solid;
+              font-style: italic;
+            "
+            >政策信息</a
+          >
+        </h3>
+        <div class="details-grids agileits w3layouts" id="yqzhghlb">
+          <div class="clearfix"></div>
+        </div>
+        <!-- Tooltip-Content -->
+        <div class="tooltip-content agileits w3layouts" id="yqzhghxq">
+          <script>
+            //$('#myModal').modal('');
+          </script>
+        </div>
+        <!-- //Tooltip-Content -->
+      </div>
+    </div>
+    <script>
+      function changeTag() {
+        document.getElementById("zxdfdt").style.display = "block";
+        document.getElementById("yqzhghdt").style.display = "none";
+      }
+      function changeTag2() {
+        document.getElementById("zxdfdt").style.display = "none";
+        document.getElementById("yqzhghdt").style.display = "block";
+        document.body.scrollTop = 5;
+      }
+      this.document.getElementById("zxdfdt").style.display = "block";
+      this.document.getElementById("yqzhghdt").style.display = "none";
+    </script>
+    <!-- //Cuisines -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script>
+      $.ajax({
+        type: "get",
+        url: "http://47.96.176.68:8088/dev-api/system/industryInfo/list?pageNum=1&pageSize=100&status=1",
+        ContentType: "",
+        success: function (data, status) {
+          var info = "";
+          var detail = "";
+          console.log(data);
+          if (data.rows != null && data.rows.length > 0) {
+            for (var i = 0; i < data.rows.length; i++) {
+              info +=
+                "<div class='col-md-4 col-sm-4 details-grid agileits w3layouts details-grid-1 wow slideInUp'>" +
+                "<div class='details-grid1 agileits w3layouts'>" +
+                "<div class='details-grid-image agileits w3layouts'>" +
+                "<span style='font-weight:700;font-size:large'>"+data.rows[i].releaseTime+"</span>" +
+                "<img src='" +
+                "http://47.96.176.68:8088/dev-api" +
+                data.rows[i].imageUrl +
+                "' alt='Agileits W3layouts' style='height:250px'>" +
+                "</div>" +
+                "<div class='details-grid-info agileits w3layouts'>" +
+                "<p style='text-overflow:ellipsis;white-space:nowrap;overflow:hidden'>" +
+                data.rows[i].title +
+                "</p>" +
+                "</div>" +
+                "<button class='btn btn-primary wow agileits w3layouts fadeInLeft' data-toggle='modal' data-target='#myModal" +
+                i +
+                "'>查看详情<span class='glyphicon agileits w3layouts glyphicon-arrow-right' aria-hidden='true'></span></button>" +
+                "<div class='clearfix'></div>" +
+                "</div>" +
+                "</div>";
+              detail +=
+                "<div class='modal fade agileits w3layouts details-modal' id='myModal" +
+                i +
+                "' tabindex='-1' role='dialog'aria-hidden='true'>" +
+                "<div class='modal-dialog agileits w3layouts modal-lg'>" +
+                "<div class='modal-content agileits w3layouts'>" +
+                "<div class='modal-header agileits w3layouts'>" +
+                "<button  type='button' class='close agileits w3layouts' data-dismiss='modal' aria-hidden='true'>" +
+                "&times;" +
+                "</button>" +
+                "<h4 class='modal-title agileits w3layouts'>" +
+                data.rows[i].title +
+                "</h4>" +
+                "</div>" +
+                "<div class='modal-body agileits w3layouts'>" +
+                "<img src='" +
+                "http://47.96.176.68:8088/dev-api" +
+                data.rows[i].imageUrl +
+                "' alt='Agileits W3layouts' />" +
+                "<p>" +
+                data.rows[i].content +
+                "</p>" +
+                "</div>" +
+                "</div>" +
+                "</div>" +
+                "</div>";
+            }
+          }
+          console.log(detail);
+          console.log(document.getElementById("zxdfdtlb"));
+          document.getElementById("zxdfdtlb").innerHTML = info;
+          console.log(document.getElementById("zxdfdtxq"));
+          document.getElementById("zxdfdtxq").innerHTML = detail;
+        },
+        error: function (data, status, e) {
+          alert("接口调用错误！");
+        },
+      });
+    </script>
+    <script>
+      $.ajax({
+        type: "get",
+        url: "http://47.96.176.68:8088/dev-api/system/policyInfo/list?pageNum=1&pageSize=100&status=1",
+        ContentType: "",
+        success: function (data, status) {
+          var info = "";
+          var detail = "";
+          console.log(data);
+          if (data.rows != null && data.rows.length > 0) {
+            for (var i = 0; i < data.rows.length; i++) {
+              info +=
+                "<div class='col-md-4 col-sm-4 details-grid agileits w3layouts details-grid-1 wow slideInUp'>" +
+                "<div class='details-grid1 agileits w3layouts'>" +
+                "<div class='details-grid-image agileits w3layouts'>" +
+                "<span style='font-weight:700;font-size:large'>"+data.rows[i].releaseTime+"</span>" +
+                "<img src='" +
+                "http://47.96.176.68:8088/dev-api" +
+                data.rows[i].imageUrl +
+                "' alt='Agileits W3layouts' style='height:250px'>" +
+                "</div>" +
+                "<div class='details-grid-info agileits w3layouts'>" +
+                "<p style='text-overflow:ellipsis;white-space:nowrap;overflow:hidden'>" +
+                data.rows[i].title +
+                "</p>" +
+                "</div>" +
+                "<button class='btn btn-primary wow agileits w3layouts fadeInLeft' data-toggle='modal' data-target='#myModal2" +
+                i +
+                "'>查看详情<span class='glyphicon agileits w3layouts glyphicon-arrow-right' aria-hidden='true'></span></button>" +
+                "<div class='clearfix'></div>" +
+                "</div>" +
+                "</div>";
+              detail +=
+                "<div class='modal fade agileits w3layouts details-modal' id='myModal2" +
+                i +
+                "' tabindex='-1' role='dialog'aria-hidden='true'>" +
+                "<div class='modal-dialog agileits w3layouts modal-lg'>" +
+                "<div class='modal-content agileits w3layouts'>" +
+                "<div class='modal-header agileits w3layouts'>" +
+                "<button  type='button' class='close agileits w3layouts' data-dismiss='modal' aria-hidden='true'>" +
+                "&times;" +
+                "</button>" +
+                "<h4 class='modal-title agileits w3layouts'>" +
+                data.rows[i].title +
+                "</h4>" +
+                "</div>" +
+                "<div class='modal-body agileits w3layouts'>" +
+                "<img src='" +
+                "http://47.96.176.68:8088/dev-api" +
+                data.rows[i].imageUrl +
+                "' alt='Agileits W3layouts' />" +
+                "<p>" +
+                data.rows[i].content +
+                "</p>" +
+                "</div>" +
+                "</div>" +
+                "</div>" +
+                "</div>";
+            }
+          }
+          document.getElementById("yqzhghlb").innerHTML = info;
+          document.getElementById("yqzhghxq").innerHTML = detail;
+        },
+        error: function (data, status, e) {
+          alert("接口调用错误！");
+        },
+      });
+      $.ajax({
+        type: "get",
+        url: "http://47.96.176.68:8088/dev-api/system/firmInfo/list?pageNum=1&pageSize=10",
+        ContentType: "",
+        success: function (data, status) {
+          var info = "";
+          var detail = "";
+          console.log(data);
+          if (data.rows != null && data.rows.length > 0) {
+            document.getElementById("gsmc").innerHTML = data.rows[0].firmName;
+            document.getElementById("gsdz").innerHTML = data.rows[0].registeredAddress;
+            document.getElementById("gsdh").innerHTML = data.rows[0].phone;
+          }
+          
+        },
+        error: function (data, status, e) {
+          alert("接口调用错误！");
+        },
+      });
+    </script>
+    <!-- Footer -->
+    <div class="footer agileits w3layouts">
+      <div class="container">
+        <div class="col-md-6 col-sm-6 agileits w3layouts footer-grids">
+          <div
+            class="col-md-4 col-sm-4 footer-grid agileits w3layouts footer-grid-1 wow fadeInUp"
+          >
+            <ul class="agileits w3layouts">
+              <li class="agileits w3layouts"><a href="index.html">首页</a></li>
+              <li class="agileits w3layouts">
+                <a href="supplyChain.html">碳供应链</a>
+              </li>
+              <li class="agileits w3layouts">
+                <a href="planning.html">碳中和规划</a>
+              </li>
+              <li class="agileits w3layouts">
+                <a href="solution.html">碳中和解决方案</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-md-4 col-sm-4 footer-grid agileits w3layouts footer-grid-2 wow fadeInUp"
+          >
+            <ul class="agileits w3layouts">
+              <li class="agileits w3layouts">
+                <a href="industryDynamics.html">行业动态</a>
+              </li>
+              <li class="agileits w3layouts">
+                <a href="firmInfo.html">公司简介</a>
+              </li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+        <div
+          class="col-md-6 col-sm-6 footer-grids agileits w3layouts newsletter wow fadeInUp"
+        >
+        <h4 id="gsmc"></h4>
+        <p>地址：<span id="gsdz"></span></p>
+        <p>电话：<span id="gsdh"></span></p>
+        </div>
+
+        <div
+          class="col-md-6 col-sm-6 footer-grids agileits w3layouts social wow fadeInUp"
+        >
+          <ul class="social-icons">
+            <li class="agileits w3layouts">
+              <a
+                href="#"
+                class="facebook agileits w3layouts"
+                title="Go to Our Facebook Page"
+              ></a>
+            </li>
+            <li class="agileits w3layouts">
+              <a
+                href="#"
+                class="twitter agileits w3layouts"
+                title="Go to Our Twitter Account"
+              ></a>
+            </li>
+            <li class="agileits w3layouts">
+              <a
+                href="#"
+                class="googleplus agileits w3layouts"
+                title="Go to Our Google Plus Account"
+              ></a>
+            </li>
+            <li class="agileits w3layouts">
+              <a
+                href="#"
+                class="instagram agileits w3layouts"
+                title="Go to Our Instagram Account"
+              ></a>
+            </li>
+            <li class="agileits w3layouts">
+              <a
+                href="#"
+                class="youtube agileits w3layouts"
+                title="Go to Our Youtube Channel"
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="col-md-6 col-sm-6 footer-grids agileits w3layouts copyright wow fadeInUp"
+        >
+          <p>Copyright &copy; 2017. 版权所有：中和中碳（厦门）科技有限公司.</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <!-- //Footer -->
+
+    <!-- Necessary-JavaScript-Files-&-Links -->
+
+    <!-- Default-JavaScript -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <!-- Bootstrap-JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Animate.CSS-JavaScript -->
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!-- //Animate.CSS-JavaScript -->
+
+    <!-- Portfolio-Popup-Box-JavaScript -->
+    <script src="js/modernizr.custom.97074.js"></script>
+    <script src="js/jquery.chocolat.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $(".special-grid a").Chocolat();
+      });
+    </script>
+    <!-- //Portfolio-Popup-Box-JavaScript -->
+
+    <!-- Show-More-JavaScript-File -->
+    <script>
+      $(document).ready(function () {
+        size_li = $("#myList li").size();
+        x = 1;
+        $("#myList li:lt(" + x + ")").show();
+        $("#loadMore").click(function () {
+          x = x + 1 <= size_li ? x + 1 : size_li;
+          $("#myList li:lt(" + x + ")").show();
+        });
+        $("#showLess").click(function () {
+          x = x - 1 < 0 ? 1 : x - 1;
+          $("#myList li")
+            .not(":lt(" + x + ")")
+            .hide();
+        });
+      });
+    </script>
+    <!-- Show-More-JavaScript-File -->
+
+    <!-- Slide-To-Top JavaScript (No-Need-To-Change) -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var defaults = {
+          containerID: "toTop", // fading element id
+          containerHoverID: "toTopHover", // fading element hover id
+          scrollSpeed: 100,
+          easingType: "linear",
+        };
+        $().UItoTop({ easingType: "easeOutQuart" });
+      });
+    </script>
+    <a href="#" id="toTop" class="agileits w3layouts" style="display: block">
+      <span id="toTopHover" style="opacity: 0"> </span
+    ></a>
+    <!-- //Slide-To-Top JavaScript -->
+
+    <!-- Smooth-Scrolling-JavaScript -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        $(".scroll, .navbar li a, .footer li a").click(function (event) {
+          $("html,body").animate(
+            { scrollTop: $(this.hash).offset().top },
+            1000
+          );
+        });
+      });
+    </script>
+    <!-- //Smooth-Scrolling-JavaScript -->
+
+    <!-- //Necessary-JavaScript-Files-&-Links -->
+  </body>
+  <!-- //Body -->
+</html>
+<style>
+  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  color:#2153D1
+}
+</style>

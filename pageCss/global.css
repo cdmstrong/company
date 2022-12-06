@@ -1,0 +1,9 @@
+html,body {
+    font-family: PingFang SC !important;
+}
+html,body h4, a, p, h3 {
+    font-family: PingFang SC !important;
+}
+.navbar-default {
+    padding: 5px 0;
+}
