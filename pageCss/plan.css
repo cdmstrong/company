@@ -1,0 +1,20 @@
+.cuisines h2 {
+    color: #2153D1;
+}
+#yqzhghdt a, #zxdfdt h3 a{
+    cursor: pointer;
+}
+.details-grid button.btn {
+    color: #2153D1;
+    border: 1px solid #2153D1;
+    float: right;
+}
+@media screen and (max-width: 603px){
+    #yqzhghdt a, #zxdfdt h3 a{
+        font-size: 18px;
+    }
+
+}
+@media screen and (max-width: 992px){
+
+}

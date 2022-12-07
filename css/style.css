@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	font-family: 'Montserrat', sans-serif;
+	/* font-family: 'Montserrat', sans-serif; */
 }
 
 p {
@@ -433,7 +433,6 @@ ul.callbacks_tabs li {
 
 .principles-grids1 {
 	padding: 40px;
-	background-color: #1dc8d9;
 	z-index: 99999;
 }
 
@@ -454,9 +453,7 @@ ul.callbacks_tabs li {
 	line-height: 30px;
 }
 
-.bottom-gds {
-	padding: 0;
-}
+
 
 .bott-img {
 	width: 100%;
@@ -470,7 +467,7 @@ ul.callbacks_tabs li {
 
 .bott-img:hover {
 	border-color: #000;
-	background-color: #00E8FF;
+	/* background-color: #00E8FF; */
 }
 
 .bottom-gds:hover h4.mission {
@@ -494,8 +491,7 @@ ul.callbacks_tabs li {
 }
 
 .bott-img .mission {
-	position: relative;
-	top: 0;
+	
 	-webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	color: #FFF;
@@ -682,7 +678,7 @@ ul.social-icons li a {
 }
 
 ul.social-icons li a.facebook {
-	background-position: 0px 0px;
+	background-position: 0px -50px;
 }
 
 ul.social-icons li a.facebook:hover {
@@ -692,7 +688,7 @@ ul.social-icons li a.facebook:hover {
 /*--w3layouts--*/
 /*--agileits--*/
 ul.social-icons li a.twitter {
-	background-position: -50px 0px;
+	background-position: -50px -50px;
 }
 
 ul.social-icons li a.twitter:hover {
@@ -700,7 +696,7 @@ ul.social-icons li a.twitter:hover {
 }
 
 ul.social-icons li a.googleplus {
-	background-position: -100px 0px;
+	background-position: -100px -50px;
 }
 
 ul.social-icons li a.googleplus:hover {
@@ -708,7 +704,7 @@ ul.social-icons li a.googleplus:hover {
 }
 
 ul.social-icons li a.instagram {
-	background-position: -150px 0px;
+	background-position: -150px -50px;
 }
 
 ul.social-icons li a.instagram:hover {
@@ -716,7 +712,7 @@ ul.social-icons li a.instagram:hover {
 }
 
 ul.social-icons li a.youtube {
-	background-position: -200px 0px;
+	background-position: -200px -50px;
 }
 
 ul.social-icons li a.youtube:hover {
@@ -3994,17 +3990,20 @@ p.contact-p {
 		background: url("../images/img-sprite.png") no-repeat 0px 0px;
 		background-size: 200px;
 	}
+	ul.social-icons li a.facebook{
+		background-position: 0px -33px;
+	}
 	ul.social-icons li a.facebook:hover {
 		background-position: 0px -33px;
 	}
 	ul.social-icons li a.twitter {
-		background-position: -35px 0px;
+		background-position: -35px -33px;
 	}
 	ul.social-icons li a.twitter:hover {
 		background-position: -35px -33px;
 	}
 	ul.social-icons li a.googleplus {
-		background-position: -69px 0px;
+		background-position: -69px -33px;
 	}
 	ul.social-icons li a.googleplus:hover {
 		background-position: -69px -33px;
@@ -4012,13 +4011,13 @@ p.contact-p {
 	ul.social-icons li a.instagram {
 		/*--w3layouts--*/
 		/*--agileits--*/
-		background-position: -102px 0px;
+		background-position: -102px -33px;
 	}
 	ul.social-icons li a.instagram:hover {
 		background-position: -102px -33px;
 	}
 	ul.social-icons li a.youtube {
-		background-position: -135px 0px;
+		background-position: -135px -33px;
 	}
 	ul.social-icons li a.youtube:hover {
 		background-position: -135px -33px;
@@ -4091,8 +4090,8 @@ p.contact-p {
 		padding: 30px 0;
 	}
 	.projects h1, .awards h3, .services h2, .principles-grids1 h3, .location h3, .principles-grids2 h3, .gallery h2, .details h3, .ventures h3, .team h3, .cuisines h2, .specials h3, h3.title, .rooms h2, .reg h2, .contact h2 {
-		font-size: 27px;
-		font-weight: 500;
+		font-size: 25px;
+		font-weight: 700;
 		margin-bottom: 15px;
 	}
 	.h4-underline {

@@ -1,0 +1,14 @@
+.gallery h2 {
+    color: #2153D1;
+}
+.details h3 {
+    color: #2153D1;
+}
+.details-grid button.btn {
+    color: #2153D1;
+    border: 1px solid #2153D1;
+    float: right;
+}
+.details-grid-image img {
+    margin-top: 10px;
+}

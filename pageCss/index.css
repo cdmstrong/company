@@ -14,17 +14,12 @@
     color: #2153D1;
 }
 .services {
-    padding: 25px 0 100px;
+    padding: 25px 0 20px;
 }
 .services h2 {
     margin-bottom: 20px;
 }
-.services-grid1 {
-    /* text-align: center; */
-}
-.services-grid1 h2 {
-    /* text-align: center; */
-}
+
 .projects h1, .services h2, .awards h3 {
     text-align: center;
     margin-left: 0;
@@ -36,7 +31,11 @@
 .server h4 {
     text-align: center;
     color: #4d5566;
-
+    font-size: 14px;
+}
+.projects h1, .services h2, .awards h3 {
+    font-size: 32px;
+    letter-spacing: 2px;
 }
 .services-desc {
     color: #2153d1;
@@ -64,26 +63,237 @@
 }
 .indes-info a {
     margin-right: 76px;
-    border-right: 1px solid #2153D1;
+    /* border-right: 1px solid #2153D1; */
 }
 .indes-info span{
     font-size: 20px;
     font-weight: 700;
 }
+.services-grids {
+    margin-bottom: 10px;
+}
 .h4-underline {
     margin-top: 8px;
+}
+.principles-grids1 h3 {
+    font-size: 32px;
+    text-align: center;
+    color: #17181a;
+}
+.principles-grids1 {
+    background-color: #fff;
+
+}
+.principles {
+    /* background: url('../images/home/bg1.jpg') no-repeat center center; */
+
+}
+.service-info-grids>div:first-child {
+    margin-bottom: 61px;
+}
+.bott-img {
+    height: auto;
+    display: flex;
+    border: 0;
+}
+.bott-img .mission {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    font-family: mocris;
+}
+.bott-img:hover .mission {
+    top: 0px;
+    color: #2153D1;
+}
+.bott-img:hover .description {
+    opacity: 0;
+}
+.abt-btm {
+    margin-top: 20px;
+}
+.footer {
+    background: #f2f4f7;
+}
+.footer ul li a, .footer div h4, .footer div p {
+    color: #17181a;
+}
+
+.footer ul li a:hover {
+    color: #2153D1;
+}
+/* //#242935; */
+.slogan {
+    background: url('../images/home/footer.jpg') no-repeat center center;
+    color: #fff;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slogan h4 {
+    font-weight: 600;
+    text-align: right;
+    margin-top: 20px;
+}
+.slider-4 p {
+    color: #fff;
+
+}
+#toTop {
+    right: 45px;
+    bottom: 45px;
+}
+.slider-4 h4 {
+    color: #fff;
+}
+.sales {
+    color: #2153D1;
+    font-size: 24px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 96px;
+}
+.sales .count {
+    font-size: 60px;
+    font-weight: 700;
+}
+.awards-grid img {
+    height: 32px;
+    width: 32px !important;
+    margin-bottom: 0px;
+}
+.awards-grid .h4-underline {
+    margin-left: 0;
+}
+.awards {
+    padding: 50px 0 60px;
+    background-color:white ;
+}
+.projects a, .services a {
+    border: none;
+}
+#serviceDetail {
+    font-size: 20px;
+}
+.principles {
+    background-color: #fff;
+}
+.logo {
+    margin-top: 5px;
+}
+.logo img {
+    height: 40px;
 }
 @media screen and (max-width: 603px){
     .service-info {
       width:100%
     }
+    .logo {
+        margin-top: 5px;
+    }
+    .logo img {
+        height: 32px;
+        width: auto;
+    }
+    .services {
+        padding: 25px 0 0;
+    }
+    .services-grids {
+        margin-bottom: 0px;
+    }
+    #serviceDetail {
+        font-size: 12.6px;
+    }
+    #toTop {
+        right: 20px;
+        bottom: 20px;
+    }
+    .indes-info a {
+        margin-right: 0;
+    }
     .bott-img {
-      height: 160px;
+      height: 66px;
+      margin-bottom: 30px;
     }
     .service-info-grids>div:first-child{
         margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .slogan slider-4 {
+        width: 100%;
+    }
+    .principles {
+        width: 100%;
+    }
+    .projects h1, .services h2, .awards h3 {
+        font-size: 25px;
+    }
+    .server h4 {
+        font-size: 12px;
+        padding: 0 15px;
+        line-height: 15px;
+    }
+    .principles-grids1 h3{
+        font-size: 23px;
+    }
+    .principles-grids1 {
+        padding-top:0px;
+    }
+    .awards-grid h4 {
+        font-size: 12.5px;
+    }
+    .sales .count {
+        font-size: 34px;
+        font-weight: 700;
+    }
+    .awards-grid img {
+        height: 18px;
+        width: 18px !important;
+        margin-bottom: 0px;
+    }
+    .sales {
+        font-size: 13px;
+        height: 67px;
+    }
+    .awards-grids {
+        margin-left: 0;
+        padding: 0 30px;
+    }
+    .awards-grids>div:nth-child(even) {
+        padding-left: 30px;
+    }
+    .awards {
+        padding: 20px 0 0;
+        background-color:white ;
+    }
+    .slogan {
+        padding: 20px;
+        height: 90px;
+    }
+    .footer {
+        padding-top:20px;
+    }
+    #gsmc {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .awards-grid h4 {
+        font-weight: 400;
+    }
+    .navbar-toggle {
+        border: none;
     }
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
       color:#2153D1
+}
+@media screen and (min-width: 992px) {
+    .bottom-gds {
+        margin-top: 20px;
+    }
+    .projects h1, .services h2, .awards h3 {
+        font-size: 32px;
+    }
 }

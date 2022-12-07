@@ -1,9 +1,31 @@
-html,body {
-    font-family: PingFang SC !important;
-}
-html,body h4, a, p, h3 {
-    font-family: PingFang SC !important;
-}
+
 .navbar-default {
     padding: 5px 0;
+}
+@media screen and (max-width: 603px){
+    html, body {
+        font-family: Roboto,SF Pro SC,SF Pro Display,SF Pro Icons,PingFang SC,BlinkMacSystemFont,-apple-system,Segoe UI,Microsoft Yahei,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial!important;
+    }
+    .logo {
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+    .logo img {
+        height: 32px;
+        width: auto;
+    }
+}
+@media screen and (min-width: 992px) {
+    html,body {
+        font-family: PingFang SC !important;
+    }
+    html,body h4, a, p, h3 {
+        font-family: PingFang SC !important;
+    }
+    .logo {
+        margin-top: 5px;
+    }
+    .logo img {
+        height: 40px;
+    }
 }
