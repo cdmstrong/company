@@ -56,6 +56,9 @@
     <link rel="stylesheet" href="pageCss/global.css" type="text/css" media="all" />
     <link rel="stylesheet" href="pageCss/index.css" type="text/css" media="all" />
     <link rel="stylesheet" href="pageCss/plan.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="pageCss/industry.css" type="text/css" media="all" />
+    <link rel="shortcut icon" href="images/icon/icon.ico">
+
     <!-- //Fonts -->
   </head>
   <!-- //Head -->
@@ -117,7 +120,7 @@
     <!-- //Header -->
 
     <!-- Cuisines -->
-    <div class="cuisines agileits w3layouts" style="padding: 40px 0;">
+    <div class="cuisines agileits w3layouts">
       <div class="container">
         <div
           class="col-md-6 col-sm-6 cuisines-grids agileits w3layouts cuisines-grids-1 wow slideInLeft"
@@ -138,14 +141,14 @@
     </div>
 
     <!-- Details -->
-    <div class="details agileits w3layouts" id="zxdfdt" style="padding: 40px 0;">
+    <div class="details agileits w3layouts" id="zxdfdt">
       <div class="container">
         <h3>
           <a onclick="changeTag()" style="color: #2153D1;border-bottom: 3px solid;font-style:italic"
             >整县达峰动态</a
           >&nbsp;&nbsp;&nbsp;<a
             onclick="changeTag2()"
-            style="border-bottom: 3px solid;font-style:italic"
+            style="font-style:italic;color: #17181a;"
             >园区综合规划动态</a
           >
         </h3>
@@ -165,7 +168,7 @@
     <div class="details agileits w3layouts" id="yqzhghdt" style="padding: 40px 0;">
       <div class="container">
         <h3>
-          <a onclick="changeTag()" style="border-bottom: 3px solid;font-style:italic"
+          <a onclick="changeTag()" style="color: #17181a;font-style:italic"
             >整县达峰动态</a
           >&nbsp;&nbsp;&nbsp;<a
             onclick="changeTag2()"
@@ -212,7 +215,7 @@
           if (data.rows != null && data.rows.length > 0) {
             for (var i = 0; i < data.rows.length; i++) {
               info +=
-                "<div class='col-md-4 col-sm-4 details-grid agileits w3layouts details-grid-1 wow slideInUp'>" +
+                "<div class='col-md-4 col-sm-4 details-grid agileits w3layouts details-grid-1 wow slideInUp' data-toggle='modal' data-target='#myModal" + i +"'>" +
                 "<div class='details-grid1 agileits w3layouts'>" +
                 "<div class='details-grid-image agileits w3layouts'>" +
                 "<img src='" +
@@ -221,7 +224,7 @@
                 "' style='height:250px'>" +
                 "</div>" +
                 "<div class='details-grid-info agileits w3layouts'>" +
-                "<p style='text-overflow:ellipsis;white-space:nowrap;overflow:hidden'>" +
+                "<p class = 'desc'>" +
                 data.rows[i].title +
                 "</p>" +
                 "</div>" +
@@ -242,7 +245,7 @@
                 "&times;" +
                 "</button>" +
                 "<h4 class='modal-title agileits w3layouts'>" +
-                data.rows[i].title +
+                data.rows[i].descInfo +
                 "</h4>" +
                 "</div>" +
                 "<div class='modal-body agileits w3layouts'>" +
@@ -282,7 +285,7 @@
           if (data.rows != null && data.rows.length > 0) {
             for (var i = 0; i < data.rows.length; i++) {
               info +=
-                "<div class='col-md-4 col-sm-4 details-grid agileits w3layouts details-grid-1 wow slideInUp' >" +
+                "<div class='col-md-4 col-sm-4 details-grid agileits w3layouts details-grid-1 wow slideInUp' data-toggle='modal' data-target='#myModal2" + i +"'>" +
                 "<div class='details-grid1 agileits w3layouts'>" +
                 "<div class='details-grid-image agileits w3layouts'>" +
                 "<img src='" +
@@ -291,8 +294,8 @@
                 "' alt='Agileits W3layouts'  style='height:250px'>" +
                 "</div>" +
                 "<div class='details-grid-info agileits w3layouts'>" +
-                "<p style='text-overflow:ellipsis;white-space:nowrap;overflow:hidden'>" +
-                data.rows[i].title +
+                "<p class = 'desc'>" +
+                data.rows[i].descInfo +
                 "</p>" +
                 "</div>" +
                 "<button class='btn btn-primary wow agileits w3layouts fadeInLeft' data-toggle='modal' data-target='#myModal2" +
@@ -359,10 +362,9 @@
     <!-- Footer -->
     <div class="footer agileits w3layouts">
       <div class="container">
-        <div class="col-md-6 col-sm-6 agileits w3layouts footer-grids">
+        <div class="col-md-4 col-sm-12 agileits w3layouts footer-grids footer-g1">
           <div
-            class="col-md-4 col-sm-4 footer-grid agileits w3layouts footer-grid-1 wow fadeInUp"
-          >
+            class="col-md-4 col-sm-6 footer-grid agileits w3layouts footer-grid-1 wow fadeInUp">
             <ul class="agileits w3layouts">
               <li class="agileits w3layouts"><a href="index.html">首页</a></li>
               <li class="agileits w3layouts">
@@ -377,8 +379,7 @@
             </ul>
           </div>
           <div
-            class="col-md-4 col-sm-4 footer-grid agileits w3layouts footer-grid-2 wow fadeInUp"
-          >
+            class="col-md-4 col-sm-6 footer-grid agileits w3layouts footer-grid-2 wow fadeInUp">
             <ul class="agileits w3layouts">
               <li class="agileits w3layouts">
                 <a href="industryDynamics.html">行业动态</a>
@@ -390,16 +391,25 @@
           </div>
           <div class="clearfix"></div>
         </div>
-
+        
         <div
-          class="col-md-6 col-sm-6 footer-grids agileits w3layouts newsletter wow fadeInUp"
+          class="col-md-4 col-sm-12 footer-grids agileits w3layouts newsletter wow fadeInUp"
         >
-        <h4 id="gsmc"></h4>
-        <p>地址：<span id="gsdz"></span></p>
-        <p>电话：<span id="gsdh"></span></p>
+          <h4 id="gsmc">联系我们</h4>
+          <p>地址：<span id="gsdz"></span></p>
+          <p>电话：<span id="gsdh"></span></p>
         </div>
-
-        <div
+        <div class="ercode col-md-4 col-sm-12">
+          <div>
+            <span>中碳订阅号</span>
+            <img src="https://m.xmecti.com/assets/img/qrcode_2.4ee0da97.jpg" alt="">
+          </div>
+          <div>
+            <span>中碳服务号</span>
+            <img src="https://m.xmecti.com/assets/img/qrcode_2.4ee0da97.jpg" alt="">
+          </div>
+        </div>
+        <!-- <div
           class="col-md-6 col-sm-6 footer-grids agileits w3layouts social wow fadeInUp"
         >
           <ul class="social-icons">
@@ -439,17 +449,19 @@
               ></a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
+        
+        <div class="clearfix"></div>
+      </div>
+      <div class="container-fluid">
         <div
-          class="col-md-6 col-sm-6 footer-grids agileits w3layouts copyright wow fadeInUp"
+          class="col-md-12 col-sm-12 footer-grids agileits w3layouts copyright wow fadeInUp copy"
         >
           <p>Copyright &copy; 2017. 版权所有：中和中碳（厦门）科技有限公司.</p>
         </div>
-        <div class="clearfix"></div>
       </div>
     </div>
-    <!-- //Footer -->
 
     <!-- Necessary-JavaScript-Files-&-Links -->
 

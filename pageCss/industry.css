@@ -3,12 +3,60 @@
 }
 .details h3 {
     color: #2153D1;
+    font-size: 25px;
+
 }
 .details-grid button.btn {
     color: #2153D1;
     border: 1px solid #2153D1;
     float: right;
+    display: none;
+}
+.details-grid-1:nth-child(4n+4) {
+    margin-top: 10px;
+}
+.details {
+    padding: 35px 0;
+    cursor: pointer;
+}
+.details-grid-info {
+    padding: 20px 0;
+}
+.details-grid-info p {
+    padding: 0;
+}
+.desc {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:1;        
+	overflow:hidden;             
+	text-overflow:ellipsis;  
+}
+.details a {
+    cursor: pointer;
+}
+.btn-detail {
+    display: none;
 }
 .details-grid-image img {
     margin-top: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width: 603px){
+    .details h3 {
+        font-size: 20px;
+    }
+    .details-grid-info {
+        padding: 0;
+    }
+    .btn-detail {
+        display: none;
+    }
+    .details {
+        padding: 25px 0;
+    }
+    .details-grid-1:nth-child(4n+4) {
+        margin-top: 0px;
+    }
 }

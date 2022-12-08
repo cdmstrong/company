@@ -391,11 +391,12 @@ ul.callbacks_tabs li {
 .awards-grids {
 	/*--w3layouts--*/
 	/*--agileits--*/
-	margin-left: 200px;
+	margin-left: 100px;
 }
 
 .awards-grid {
 	padding: 0;
+	
 }
 
 .awards-grid img {
@@ -406,7 +407,7 @@ ul.callbacks_tabs li {
 .awards-grid h4 {
 	font-size: 18px;
 	font-weight: 700;
-	text-align: left;
+	text-align: center;
 }
 
 .awards-grid .h4-underline {
@@ -842,7 +843,7 @@ ul.social-icons li a.youtube:hover {
 	font-size: 40px;
 	font-weight: 700;
 	margin-bottom: 50px;
-	color: #1dc8d9;
+	color: #2153D1;
 }
 
 .details-grid {
@@ -864,9 +865,9 @@ ul.social-icons li a.youtube:hover {
 
 .details-grid button.btn {
 	font-weight: 600;
-	color: #1dc8d9;
+	color: #2153D1;
 	padding: 10px 30px;
-	border: 1px solid #1dc8d9;
+	border: 1px solid #2153D1;
 	border-right: none;
 	outline: none;
 	background-color: #FFF;
@@ -874,7 +875,7 @@ ul.social-icons li a.youtube:hover {
 }
 
 .details-grid button.btn:hover {
-	background-color: #1dc8d9;
+	background-color: #2153D1;
 	color: #FFF;
 }
 
@@ -888,7 +889,7 @@ ul.social-icons li a.youtube:hover {
 	/*--w3layouts--*/
 	/*--agileits--*/
 	letter-spacing: -1px;
-	color: #1dc8d9;
+	color: #2153D1;
 }
 
 .modal-body {
@@ -2846,7 +2847,7 @@ p.contact-p {
 		margin-left: 220px;
 	}
 	.awards-grids {
-		margin-left: 250px;
+		margin-left: 100px;
 	}
 	/*--w3layouts--*/
 	/*--agileits--*/

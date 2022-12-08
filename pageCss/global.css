@@ -14,6 +14,9 @@
         height: 32px;
         width: auto;
     }
+    .modal-title {
+        font-size: 20px;
+    }
 }
 @media screen and (min-width: 992px) {
     html,body {

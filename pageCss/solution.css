@@ -9,3 +9,8 @@
     border: 1px solid #2153D1;
     float: right;
 }
+@media screen and (max-width: 603px){
+    .gallery h2 {
+        font-size: 25px;
+    }
+}
