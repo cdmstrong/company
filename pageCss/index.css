@@ -52,7 +52,7 @@
     text-align: center;
     color: #4d5566;
     font-size: 14px;
-    letter-spacing: 1px;
+    letter-spacing: 0.3px;
 }
 .callbacks_tabs {
     display: none;
@@ -173,7 +173,7 @@
     align-items: center;
 }
 .awards-grids {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .slogan h4 {
     font-weight: 600;
@@ -356,6 +356,9 @@
         height: 32px;
         width: auto;
     }
+    .awards-grid {
+        margin-bottom: 74px;
+    }
     .services {
         padding: 25px 0 0;
     }
@@ -425,25 +428,25 @@
         padding: 40px 30px 0 15px;
         position: relative;
     }
-    .awards-grids>div {
-        position: relative;
-    }
-    .awards-grids>div:nth-child(1) {
-        top:-50px;
-        left: 8%;
-    }
-    .awards-grids>div:nth-child(2) {
-        right: 0;
-        top: 12px;
-    }
-    .awards-grids>div:nth-child(3) {
-        left: 0%;
-        bottom: 30px;
-    }
-    .awards-grids>div:nth-child(4) {
-        right: 13%;
-        bottom: -20px;
-    }
+    /*.awards-grids>div {*/
+    /*    position: relative;*/
+    /*}*/
+    /*.awards-grids>div:nth-child(1) {*/
+    /*    top:-50px;*/
+    /*    left: 8%;*/
+    /*}*/
+    /*.awards-grids>div:nth-child(2) {*/
+    /*    right: 0;*/
+    /*    top: 12px;*/
+    /*}*/
+    /*.awards-grids>div:nth-child(3) {*/
+    /*    left: 0%;*/
+    /*    bottom: 30px;*/
+    /*}*/
+    /*.awards-grids>div:nth-child(4) {*/
+    /*    right: 13%;*/
+    /*    bottom: -20px;*/
+    /*}*/
     .awards-grids>div:nth-child(even) {
         padding-left: 30px;
     }
