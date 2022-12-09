@@ -9,6 +9,10 @@
     border: 1px solid #2153D1;
     float: right;
 }
+/* .banner h1 {
+    top:50%;
+    transform: translateY(-50%);
+} */
 @media screen and (max-width: 603px){
     .gallery h2 {
         font-size: 25px;

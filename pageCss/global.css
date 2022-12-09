@@ -17,8 +17,28 @@
     .modal-title {
         font-size: 20px;
     }
+    
 }
 @media screen and (min-width: 992px) {
+    .caption {
+        width: 100%;
+        left: 0;
+    }
+    .caption h3 {
+        text-align: center;
+    }
+    .services-grid2 img {
+        width: 95%;
+    }
+    .service-info p {
+        display: -webkit-box;
+        overflow: hidden;
+        white-space: normal !important;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
     html,body {
         font-family: PingFang SC !important;
     }

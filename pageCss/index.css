@@ -21,7 +21,7 @@
 }
 .blue_block {
     text-align: center;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 .blue_indestory {
     margin: 0;
@@ -52,7 +52,10 @@
     text-align: center;
     color: #4d5566;
     font-size: 14px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
+}
+.callbacks_tabs {
+    display: none;
 }
 .projects h1, .services h2, .awards h3 {
     font-size: 32px;
@@ -116,7 +119,7 @@
 
 }
 .service-info-grids>div:first-child {
-    margin-bottom: 61px;
+    margin-bottom: 26px;
 }
 .bott-img {
     height: auto;
@@ -149,6 +152,15 @@
 .footer ul li a:hover {
     color: #2153D1;
 }
+.team {
+    padding: 40px 0; 
+}
+.slogan-div {
+    z-index: 2;
+}
+.slogan mask {
+    top: 0;
+}
 /* //#242935; */
 .slogan {
     background: url('../images/home/footer.jpg') no-repeat center center;
@@ -156,7 +168,12 @@
     height: 130px;
     display: flex;
     justify-content: center;
+    background-size: 100% auto;
+    background-position-y: 70%;
     align-items: center;
+}
+.awards-grids {
+    margin-top: 40px;
 }
 .slogan h4 {
     font-weight: 600;
@@ -237,10 +254,41 @@
     margin-top: 15px;
     border-top: 1px solid #cbd0da;
 }
+.dynamic {
+    position:absolute;
+    bottom: 13px;
+    font-size: 14px;
+    padding-left: 10px;
+    color: #fff;
+}
 .footer {
     padding-bottom: 15px;
 }
 @media screen and (max-width: 603px){
+    .team {
+        padding: 20px 0;
+       
+    }
+    .co-trade {
+       height: 16px;
+       width: 16px !important;
+    }
+    .services-grid2 {
+        padding: 0 18px;
+    }
+    .navbar-default {
+        background-color: rgba(255,255,255, 1) !important;
+    }
+    .inner-pages-navbar {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0px;
+        z-index: 9;
+        border-bottom: 1px solid #cbd0da
+    }
+    .team h3 {
+        font-size: 18px;
+    }
     .newsletter {
         padding: 10px 0 15px 15px;
         border-bottom: 1px solid #cbd0da;
@@ -281,6 +329,10 @@
     }
     .caption {
         transform: translateY(-50%);
+        width: 100%;
+    }
+    .caption h3{
+        text-align: center;
     }
     .newsletter {
         margin-bottom: 0px;
@@ -370,7 +422,27 @@
     }
     .awards-grids {
         margin-left: 0;
-        padding: 0 30px 0 15px;
+        padding: 40px 30px 0 15px;
+        position: relative;
+    }
+    .awards-grids>div {
+        position: relative;
+    }
+    .awards-grids>div:nth-child(1) {
+        top:-50px;
+        left: 8%;
+    }
+    .awards-grids>div:nth-child(2) {
+        right: 0;
+        top: 12px;
+    }
+    .awards-grids>div:nth-child(3) {
+        left: 0%;
+        bottom: 30px;
+    }
+    .awards-grids>div:nth-child(4) {
+        right: 13%;
+        bottom: -20px;
     }
     .awards-grids>div:nth-child(even) {
         padding-left: 30px;
