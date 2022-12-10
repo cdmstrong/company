@@ -222,7 +222,7 @@
               alt="Agileits W3layouts"
               
             />
-            <p >&nbsp;<span class='count' >1560</span>&nbsp;万吨</p>
+            <p >&nbsp;<span class='count' id="trade">1560</span>&nbsp;万吨</p>
             <span class="awards-img absolute"></span>
           </div>
           <!-- <p></p> -->
@@ -240,7 +240,7 @@
             src="images/icon/user1.png"
             alt="Agileits W3layouts"
           />
-            <p >&nbsp;<span class='count' >321</span>&nbsp;位</p>
+            <p >&nbsp;<span class='count' id="register">321</span>&nbsp;位</p>
             <span class="awards-img absolute"></span>
           </div>
           <!-- <p></p> -->
@@ -258,7 +258,7 @@
             src="images/icon/project.png"
             alt="Agileits W3layouts"
           />
-            <p >&nbsp;<span class='count' >125</span>&nbsp;个</p>
+            <p >&nbsp;<span class='count' id="project">125</span>&nbsp;个</p>
             <span class="awards-img absolute"></span>
           </div>
           <!-- <p>Head, Management</p>
@@ -276,7 +276,7 @@
             src="images/icon/gongyinshang.png"
             alt="Agileits W3layouts"
           />
-            <p >&nbsp;<span class='count' >167</span>&nbsp;个</p>
+            <p >&nbsp;<span class='count' id="supplier">167</span>&nbsp;个</p>
             <span class="awards-img absolute"></span>
           </div>
           <!-- <p>Chef de Cuisine</p>
@@ -359,7 +359,24 @@
       </div>
     </div>
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/countup.js"></script>
     <script>
+      var options={
+        useEasing: true,  // 过渡动画效果，默认ture
+        useGrouping: true,  // 千分位效果，例：1000->1,000。默认true
+        separator: ',',   // 使用千分位时分割符号
+        decimal: '.',   // 小数位分割符号
+        prefix: '',    // 前置符号
+        suffix: ''    // 后置符号，可汉字
+    }
+      let count1 = new CountUp('trade',   0, 1560, 0, 3, options)
+      let count2 = new CountUp('register',   0, 321, 0, 3, options)
+      let count3 = new CountUp('project',   0, 125, 0, 3, options)
+      let count4 = new CountUp('supplier',   0, 167, 0, 3, options)
+      count1.start()
+      count2.start()
+      count3.start()
+      count4.start()
       $.ajax({
         type: "get",
         url: "http://47.96.176.68:8088/dev-api/system/industryInfo/list?pageNum=1&pageSize=100&status=1",
