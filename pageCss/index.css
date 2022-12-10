@@ -52,7 +52,7 @@
     text-align: center;
     color: #4d5566;
     font-size: 14px;
-    letter-spacing: 0.3px;
+    font-weight: normal;
 }
 .callbacks_tabs {
     display: none;
@@ -173,7 +173,7 @@
     align-items: center;
 }
 .awards-grids {
-    margin-top: 20px;
+    margin-top: 5px;
 }
 .slogan h4 {
     font-weight: 600;
@@ -396,8 +396,8 @@
         font-size: 25px;
     }
     .server h4 {
-        font-size: 12px;
-        padding: 0 15px;
+        font-size: 13px;
+        padding: 10px 15px;
         line-height: 15px;
     }
     .principles-grids1 h3{
@@ -451,7 +451,7 @@
         padding-left: 30px;
     }
     .awards {
-        padding: 20px 0 0;
+        padding: 55px 0 0;
         background-color:#f6f7fc ;
     }
     .slogan {
