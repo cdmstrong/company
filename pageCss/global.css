@@ -28,7 +28,8 @@
         text-align: center;
     }
     .services-grid2 img {
-        width: 95%;
+        width: 100%;
+        position: inherit;
     }
     .service-info p {
         display: -webkit-box;
