@@ -19,7 +19,12 @@
     }
     
 }
+
 @media screen and (min-width: 992px) {
+    
+    html,body {
+        min-width: 992px;
+    }
     .caption {
         width: 100%;
         left: 0;
@@ -51,5 +56,6 @@
     }
     .logo img {
         height: 40px;
+        width: auto;
     }
 }

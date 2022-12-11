@@ -357,7 +357,7 @@ ul.callbacks_tabs li {
 .service-info p {
     color: #777;
     line-height: 30px;
-    padding-right: 75px;
+    /* padding-right: 75px; */
     margin-bottom: 30px
 }
 
@@ -2869,7 +2869,7 @@ p.contact-p {
     }
 
     .awards-grids {
-        margin-left: 225px;
+        /* margin-left: 225px; */
     }
 
     .principles-grids2 {
