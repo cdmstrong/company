@@ -3700,7 +3700,7 @@ p.contact-p {
     }
 
     .details-grid {
-        width: 33.3%;
+        /* width: 33.3%; */
         float: left;
     }
 
@@ -4124,17 +4124,17 @@ p.contact-p {
     }
 
     .details-grid {
-        width: 100%;
+        /* width: 100%; */
     }
 
     .details-grid-image {
-        width: 50%;
+        /* width: 50%;   */
         float: left;
         padding-right: 10px;
     }
 
     .details-grid-info {
-        width: 50%;
+        width: 100%;
         float: left;
     }
 
@@ -4839,7 +4839,7 @@ p.contact-p {
     }
 
     .team-grid {
-        width: 90%;
+        /* width: 90%; */
         margin-left: 5%;
     }
 

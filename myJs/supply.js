@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function(){
     $('#more').click(() => {
         console.log('supply')
         $('.team').hide();
@@ -12,12 +12,11 @@ $(function(){
     }
     $("#search").bind("input propertychange change",function(event){
         //代码块
-        search($("#serach").val())
-        
+        // dou(search, $("#search").val())
+        search($("#search").val())
     });
     function randerDiv(list) {
-        $("#companyList").empty();
-        str = '';
+        let str = '';
         list.forEach(val => {
             if(val.list.length > 0) {
                str += `
@@ -37,13 +36,13 @@ $(function(){
         $("#companyList").html(str);
     }
     function randerList(list) {
+        let str = ""
         list.forEach(item => {
             str += `<div class="col-sm-12 col-md-4 company-name">
             <img src="http://47.96.176.68:8088/dev-api/${item.imageUrl}" alt="">
             <div>${item.firmName}</div>
         </div>`
         })
-        $("#companyList").empty();
         $("#companyList").html(str);
     }
     $.ajax({
@@ -103,17 +102,25 @@ $(function(){
         },
       });
     function search(key) {
-        let res = null;
-        let str = [key].join('.*');
-        let reg = new RegExp(str);
-        for(let i = 0, l = obj.length; i < l; i++) {
-            res = obj[i].list.filter(a => reg.test(a.firmName) || reg.test(a.firmDesc));
-            // res = obj[i].list.find(item => item.firmName == key)
-            if(res) {
-                break;
-            }
+        $("#companyList").html("");
+        let res = [];
+        let str = `\S*${key}\S*`;
+        if(key == "") {
+            randerDiv(obj);
+            return
         }
-        if(res) {
+        let reg = new RegExp(str,'i');//不区分大小写
+
+        for(let i = 0, l = obj.length; i < l; i++) {
+            obj[i].list.map(item => {
+                if(reg.test(item.firmName)){
+                    res.push(item);
+                }
+            })
+            // res = obj[i].list.find(item => item.firmName == key)
+            
+        }
+        if(res.length > 0) {
             randerList(res)
         } else {
             randerDiv(obj)
@@ -121,10 +128,10 @@ $(function(){
 
         console.log(res);
     }
-    function dou(func) {
+    function dou(func, val) {
         if(timer) return;
         timer = setTimeout(() => {
-            func()
+            func(val)
             timer = null;
         }, 1000)
     }
