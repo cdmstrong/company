@@ -25,10 +25,12 @@
 
     <!-- Index-Page-CSS -->
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" media="all" />
     <!-- Animate.CSS -->
     <link rel="stylesheet" href="css/animate.css" type="text/css" media="all" />
     <link rel="stylesheet" href="pageCss/index.css" type="text/css" media="all" />
     <link rel="stylesheet" href="pageCss/global.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <!-- //Custom-Stylesheet-Links -->
 
     <!-- Fonts -->
@@ -50,6 +52,7 @@
       href="http://fonts.googleapis.com/css?family=Montserrat:400,700"
       type="text/css"
     />
+    <link rel="stylesheet" href="./pageCss/supply.css">
     <!-- //Fonts -->
   </head>
   <!-- //Head -->
@@ -109,47 +112,7 @@
     </div>
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script>
-      $.ajax({
-        type: "get",
-        url: "http://47.96.176.68:8088/dev-api/system/supplyChain/list?pageNum=1&pageSize=100 ",
-        ContentType: "",
-        success: function (data, status) {
-          var info = "";
-          var detail = "";
-          console.log(data);
-          if (data.rows != null && data.rows.length > 0) {
-            for (var i = 0; i < data.rows.length; i++) {
-              info +=
-                "<div class='col-md-4 col-sm-4 team-grid agileits w3layouts team-grid1 wow slideInUp' style='width:20%' id='tgylqy'>" +
-                "<h6 style='color:white ;'>" +
-                data.rows[i].firmName +
-                "</h6>" +
-                "<figure class='effect-zoe agileits w3layouts'>" +
-                "<img src='" +
-                "http://47.96.176.68:8088/dev-api" +
-                data.rows[i].imageUrl +
-                "' alt='Agileits W3layouts'/>" +
-                
-                "</figure>" +
-                "</div>";
-            }
-          }
-          //"<figcaption>" +
-           // "<h5>" +
-            //data.rows[i].firmName +
-            //"</h5>" +
-            //"<p class='description agileits w3layouts'>" +
-            //"" +
-            //"</p>" +
-            //" </figcaption>"
-          console.log(detail);
-          console.log(document.getElementById("tgylqy"));
-          document.getElementById("tgylqy").innerHTML = info;
-        },
-        error: function (data, status, e) {
-          alert("接口调用错误！");
-        },
-      });
+      
       $.ajax({
         type: "get",
         url: "http://47.96.176.68:8088/dev-api/system/firmInfo/list?pageNum=1&pageSize=10",
@@ -173,17 +136,31 @@
     <!-- Team -->
     <div
       class="team agileits w3layouts"
-      style="background-color: rgb(42, 41, 41)"
+      style="background-color: rgb(255, 255,255 )"
     >
       <div class="container">
-        <h3 style="color: rgb(255, 255, 255)">碳供应链企业</h3>
+        <h3 style="color: rgb(41, 39, 39)">热门供应商
+          <span id="more">查看更多>>></span>
+        </h3>
         <div class="team-grids agileits w3layouts grid" id="tgylqy">
           <div class="clearfix"></div>
         </div>
       </div>
     </div>
     <!-- //Team -->
-
+    <!-- 按字母排序 -->
+    <div class="sortPanel" >
+      <div class="container">
+        <h3>碳供应商</h3>
+        <div class="col-md-12 col-sm-12 search-panel">
+          <input type="text" placeholder="输入供应商名称搜索" id="search">
+            <img src="./images/icon/search.png" class=" search-btn">
+        </div>
+        <div id='companyList'>
+          
+        </div>
+      </div>
+    </div>
     <!-- Footer -->
     <!-- Footer -->
     <div class="footer agileits w3layouts">
@@ -228,11 +205,11 @@
         <div class="ercode col-md-4 col-sm-12">
           <div>
             <span>中碳订阅号</span>
-            <img src="https://m.xmecti.com/assets/img/qrcode_2.4ee0da97.jpg" alt="">
+            <img src="/images/logo/qrcode.jpg" alt="">
           </div>
           <div>
             <span>中碳服务号</span>
-            <img src="https://m.xmecti.com/assets/img/qrcode_2.4ee0da97.jpg" alt="">
+            <img src="/images/logo/qrcode.jpg" alt="">
           </div>
         </div>
         <!-- <div
@@ -296,7 +273,8 @@
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <!-- Bootstrap-JavaScript -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    
     <!-- Animate.CSS-JavaScript -->
     <script src="js/wow.min.js"></script>
     <script>
@@ -334,8 +312,10 @@
         });
       });
     </script>
+    <script src="./js/flexlib.js"></script>
     <!-- //Smooth-Scrolling-JavaScript -->
-
+    <script src="./js/pinyinUtil.js"></script>
+    <script src="./myJs/supply.js"></script>
     <!-- //Custom-JavaScript-File-Links -->
   </body>
   <!-- //Body -->

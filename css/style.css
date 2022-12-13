@@ -395,7 +395,7 @@ ul.callbacks_tabs li {
 .awards-grids {
     /*--w3layouts--*/
     /*--agileits--*/
-    margin-left: 100px;
+    /* margin-left: 100px; */
 }
 
 .awards-grid {
@@ -2836,7 +2836,7 @@ p.contact-p {
     }
 
     .awards-grids {
-        margin-left: 100px;
+        /* margin-left: 100px; */
     }
 
     /*--w3layouts--*/
@@ -2915,7 +2915,7 @@ p.contact-p {
     }
 
     .awards-grids {
-        margin-left: 180px;
+        /* margin-left: 180px; */
     }
 
     .principles-grids2 {
@@ -2947,7 +2947,7 @@ p.contact-p {
     }
 
     .awards-grids {
-        margin-left: 150px;
+        /* margin-left: 150px; */
     }
 
     .services-grid1 p {
@@ -2998,7 +2998,7 @@ p.contact-p {
     }
 
     .awards-grids {
-        margin-left: 100px;
+        /* margin-left: 100px; */
     }
 
     .awards-grid img {
@@ -3210,7 +3210,7 @@ p.contact-p {
     }
 
     .awards-grids {
-        margin-left: 200px;
+        /* margin-left: 200px; */
         /*--w3layouts--*/
         /*--agileits--*/
     }
@@ -3411,7 +3411,7 @@ p.contact-p {
     }
 
     .awards-grids {
-        margin-left: 150px;
+        /* margin-left: 150px; */
     }
 
     .awards-grid img {
@@ -3718,10 +3718,7 @@ p.contact-p {
 
     /*--w3layouts--*/
     /*--agileits--*/
-    .team-grid {
-        width: 33.3%;
-        float: left;
-    }
+    
 
     .cuisines-grids {
         width: 50%;
@@ -3763,7 +3760,7 @@ p.contact-p {
     }
 
     .awards-grids {
-        margin-left: 135px;
+        /* margin-left: 135px; */
     }
 
     .newsletter input[type="submit"] {
@@ -3801,7 +3798,7 @@ p.contact-p {
     }
 
     .awards-grids {
-        margin-left: 110px;
+        /* margin-left: 110px; */
     }
 
     .services {
@@ -3830,9 +3827,7 @@ p.contact-p {
         font-size: 35px;
     }
 
-    .team-grid {
-        width: 50%;
-    }
+    
 
     figure.effect-zoe figcaption {
         padding: 15px 10px;
@@ -4010,13 +4005,13 @@ p.contact-p {
     }
 }
 
-@media screen and (max-width: 603px) {
+@media screen and (max-width: 3000px) {
     .awards-img {
         display: block;
         z-index: -3;
         width: 100px;
         height: 93px;
-        top: 10px;
+        top: 20px;
         background: url("../images/icon/icon_service2.png");
         background-size: 100% 100%;
         opacity: .8;
@@ -4070,7 +4065,7 @@ p.contact-p {
     }
 
     .awards-grids {
-        margin-left: 90px;
+        /* margin-left: 90px; */
     }
 
     .awards-grid-1, .awards-grid-2 {
@@ -4336,7 +4331,7 @@ p.contact-p {
     }
 
     .awards-grids {
-        margin-left: 50px;
+        /* margin-left: 50px; */
     }
 
     .services-grid {
@@ -4422,7 +4417,7 @@ p.contact-p {
     }
 
     .awards-grids {
-        margin-left: 30px;
+        /* margin-left: 30px; */
     }
 
     .awards-grid-1, .awards-grid-2 {
@@ -4469,10 +4464,7 @@ p.contact-p {
         line-height: 20px;
     }
 
-    .team-grid {
-        width: 70%;
-        margin-left: 15%;
-    }
+    
 
     .special-grid {
         width: 50%;
@@ -4565,7 +4557,7 @@ p.contact-p {
     }
 
     .awards-grids {
-        margin-left: 75px;
+        /* margin-left: 75px; */
     }
 
     .awards-grid .h4-underline, .service-info .h4-underline {
@@ -4678,10 +4670,7 @@ p.contact-p {
         line-height: 23px;
     }
 
-    .team-grid {
-        width: 80%;
-        margin-left: 10%;
-    }
+    
 
     #loadMore, #showLess {
         width: 45%;
