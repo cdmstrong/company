@@ -376,7 +376,7 @@ ul.callbacks_tabs li {
 
 .awards {
     padding: 200px 0;
-    background: url("../images/home/background_earth_new.png");
+    background: url("../images/home/background_earth_new1.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -4128,9 +4128,9 @@ p.contact-p {
     }
 
     .details-grid-image {
-        /* width: 50%;   */
+        width: 100%;  
         float: left;
-        padding-right: 10px;
+        /* padding-right: 10px; */
     }
 
     .details-grid-info {
@@ -4233,6 +4233,7 @@ p.contact-p {
     /*--agileits--*/
     .details-grid {
         padding: 0;
+        width: 100%;
     }
 
     .details-grid1, .details-grid2, .details-grid3 {

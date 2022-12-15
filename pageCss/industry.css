@@ -42,6 +42,7 @@
 .details-grid-image img {
     margin-top: 10px;
     cursor: pointer;
+    height: 200px;
 }
 @media screen and (max-width: 603px){
     .details h3 {
