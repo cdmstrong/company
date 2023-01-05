@@ -3,6 +3,7 @@
 }
 #more {
     float: right;
+    cursor: pointer;
 }
 .sortPanel>div {
     padding: 40px 0;
