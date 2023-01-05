@@ -20,6 +20,16 @@
 .sortPanel {
     display: none;
 }
+@media screen and (max-width: 3000px) {
+    .gallery-grids {
+        width: auto;
+            float: left;
+        }
+}
+.gallery-grids {
+    /* width: 100%; */
+    float: left;
+}
 .company-name {
     display: flex;
     justify-content: center;

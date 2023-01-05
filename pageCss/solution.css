@@ -17,4 +17,45 @@
     .gallery h2 {
         font-size: 25px;
     }
+    .gallery-grids {
+        width: auto;
+    }
+}
+.ban {
+    height: 250px;
+}
+.detail {
+    text-overflow:ellipsis;white-space:nowrap;overflow:hidden;
+}
+@media screen and (min-width: 992px){
+    .details-grid-image img {
+        width: 300px;
+    }
+    .detail {
+        text-overflow:inherit;
+        white-space:inherit;
+    }
+    .details-grid {
+        margin-bottom: 10px;
+    }
+    .ban {
+        height: 200px;
+    }
+    .details-grid1 {
+        position: relative;
+    }
+    .details-grid-image span {
+        display: none;
+    }
+    .details-grid-info {
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        width: 720px;
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+    }
+
 }

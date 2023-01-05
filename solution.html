@@ -91,7 +91,7 @@
 	<!-- Gallery -->
 	<div class="gallery agileits w3layouts" style="padding: 20px 0;">
 		<div class="container">
-			<div class="col-md-6 col-sm-6 gallery-grids agileits w3layouts gallery-grids1 wow ">
+			<div class="col-md-6 col-sm-12  gallery-grids agileits w3layouts gallery-grids1 wow ">
 				<h2>什么是碳综合解决方案？</h2>
 				<div class="gallery-grid-images agileits w3layouts">
 					<!-- <div class="col-md-4 col-sm-4 gallery-grid agileits w3layouts gallery-grid-1">
@@ -141,17 +141,17 @@
           if (data.rows!=null&&data.rows.length > 0) {
             for (var i = 0; i < data.rows.length; i++) {
               info +=
-                "<div class='col-md-4 col-sm-4 details-grid agileits w3layouts details-grid-1 wow slideInUp' data-toggle='modal' data-target='#myModal" + i +"'>" +
+                "<div class='col-md-12 col-sm-4 col-xs-12 details-grid agileits w3layouts details-grid-1 wow slideInUp' data-toggle='modal' data-target='#myModal" + i +"'>" +
                 "<div class='details-grid1 agileits w3layouts'>" +
                 "<div class='details-grid-image agileits w3layouts'>" +
 				"<span style='font-weight:700;font-size:large'>"+data.rows[i].title+"</span>" +
                 "<img src='" +
                 "http://47.96.176.68:8088/dev-api" +
                 data.rows[i].imageUrl +
-                "' alt='Agileits W3layouts' style='height:250px'>" +
+                "' alt='Agileits W3layouts' class='ban' >" +
                 "</div>" +
                 "<div class='details-grid-info agileits w3layouts'>" +
-                "<p style='text-overflow:ellipsis;white-space:nowrap;overflow:hidden'>" +
+                "<p class='detail'>" +
                 data.rows[i].descInfo +
                 "</p>" +
                 "</div>" +
