@@ -26,7 +26,7 @@ $(document).ready(function(){
                 `
                 val.list.forEach(item => {
                     str += `<div class="col-sm-12 col-md-4 company-name">
-                    <img src="http://47.96.176.68:8088/dev-api/${item.imageUrl}" alt="">
+                    <img src="https://www.cncarbonneutrality.com/dev-api/${item.imageUrl}" alt="">
                     <div>${item.firmName}</div>
                 </div>`
                 })
@@ -39,7 +39,7 @@ $(document).ready(function(){
         let str = ""
         list.forEach(item => {
             str += `<div class="col-sm-12 col-md-4 company-name">
-            <img src="http://47.96.176.68:8088/dev-api/${item.imageUrl}" alt="">
+            <img src="https://www.cncarbonneutrality.com/dev-api/${item.imageUrl}" alt="">
             <div>${item.firmName}</div>
         </div>`
         })
@@ -47,7 +47,7 @@ $(document).ready(function(){
     }
     $.ajax({
         type: "get",
-        url: "http://47.96.176.68:8088/dev-api/system/supplyChain/list?pageNum=1&pageSize=1000 ",
+        url: "https://www.cncarbonneutrality.com/dev-api/system/supplyChain/list?pageNum=1&pageSize=1000 ",
         ContentType: "",
         success: function (data, status) {
             let list = data.rows;
@@ -65,7 +65,7 @@ $(document).ready(function(){
     
     $.ajax({
         type: "get",
-        url: "http://47.96.176.68:8088/dev-api/system/supplyChain/list?pageNum=1&pageSize=100 ",
+        url: "https://www.cncarbonneutrality.com/dev-api/system/supplyChain/list?isHot=1&pageNum=1&pageSize=1000 ",
         ContentType: "",
         success: function (data, status) {
           var info = "";
@@ -80,7 +80,7 @@ $(document).ready(function(){
                 `
                 <div class='col-md-2 col-xs-2 team-grid agileits w3layouts team-grid1 wow slideInUp' >
                     <figure class='effect-zoe agileits w3layouts'>
-                    <img src="http://47.96.176.68:8088/dev-api/${data.rows[i].imageUrl}" alt='Agileits W3layouts'/>
+                    <img src="https://www.cncarbonneutrality.com/dev-api/${data.rows[i].imageUrl}" alt='Agileits W3layouts'/>
                     </figure>
                 </div>`
             }
