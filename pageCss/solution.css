@@ -26,7 +26,11 @@
     height: 250px;
 }
 .detail {
-    text-overflow:ellipsis;white-space:nowrap;overflow:hidden;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow:ellipsis;white-space:wrap;overflow:hidden;
 }
 @media screen and (min-width: 992px){
     .details-grid-image img {

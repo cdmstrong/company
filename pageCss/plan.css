@@ -17,6 +17,12 @@
     }
 
 }
-@media screen and (max-width: 992px){
-
+@media screen and (min-width: 992px){
+    .desc {
+        display: inline-block;
+        height: 5rem;
+    }
+    .newsImg {
+        display:inline-block; height: 5rem;
+    }
 }
